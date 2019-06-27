@@ -9,7 +9,7 @@
           "architecture": "nRF5",
           "version": "0.0.1",
           "category": "Contributed",
-          "url": "https://github.com/AlexanderMcLaughlin/TestRepo/blob/master/arduino-nRF5-master.zip",
+          "url": "https://github.com/AlexanderMcLaughlin/TestRepo/raw/master/arduino-nRF5-master.zip",
           "archiveFileName": "arduino-nRF5-master.zip",
           "checksum": "SHA256:8eeba39896bce1c4fa29ee40d41768e12f47bbca2cc0f0b42755fbe1808bba34",
           "size": "859832",
