@@ -16,12 +16,12 @@
           ],
           "toolsDependencies": [
             {
-              "packager": "sandeepmistry",
+              "packager": "LSI",
               "name": "gcc-arm-none-eabi",
               "version": "5_2-2015q4"
             },
             {
-              "packager": "sandeepmistry",
+              "packager": "LSI",
               "name": "openocd",
               "version": "0.10.0-dev.nrf5"
             }
