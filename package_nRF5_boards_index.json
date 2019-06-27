@@ -13,7 +13,7 @@
           "archiveFileName": "arduino-nRF5-master.zip",
           "boards": [
             {"name": "LSI Board"}
-          ]
+          ],
           "toolsDependencies": [
             {
               "packager": "sandeepmistry",
