@@ -9,7 +9,7 @@
           "architecture": "nRF5",
           "version": "0.0.1",
           "category": "Contributed",
-          "url": "file://C:/Users/JSM/Desktop/arduino-nRF5-master.zip",
+          "url": "https://github.com/AlexanderMcLaughlin/TestRepo/blob/master/arduino-nRF5-master.zip",
           "archiveFileName": "arduino-nRF5-master.zip",
           "boards": [
             {"name": "LSI Board"}
