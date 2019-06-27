@@ -14,20 +14,6 @@
           "boards": [
             {"name": "LSI Board"}
           ],
-		  "toolsDependencies": [
-            {
-              "packager": "sandeepmistry",
-              "name": "gcc-arm-none-eabi",
-              "version": "5_2-2015q4"
-            },
-            {
-              "packager": "sandeepmistry",
-              "name": "openocd",
-              "version": "0.10.0-dev.nrf5"
-            }
-          ]
-        }
-      ],
       "tools":[
         {
           "name": "gcc-arm-none-eabi",
