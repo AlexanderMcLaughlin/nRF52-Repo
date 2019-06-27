@@ -13,7 +13,9 @@
           "archiveFileName": "arduino-nRF5-master.zip",
           "boards": [
             {"name": "LSI Board"}
-          ],
+          ]
+        }
+      ],
       "tools":[
         {
           "name": "gcc-arm-none-eabi",
