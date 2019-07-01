@@ -112,11 +112,11 @@ You should now be able to program the board using the Arduino IDE, several examp
 
 <details>
   <summary>I accidentally clicked "yes" when nRFgo prompted me to update the firmware on the device. What do I do now?</summary>
-  <p>Go <a href="https://github.com/AlexanderMcLaughlin/TestRepo#reset-default-drivers">here</a> and follow the steps to restore the board drivers to their original settings. Then follow all steps underneath <a href="https://github.com/AlexanderMcLaughlin/TestRepo#firmware-replacement-and-driver-updating">Firmware Replacement and Driver Updating</a></p>
+  <p>Go <a href="https://github.com/AlexanderMcLaughlin/TestRepo#reset-default-drivers">here</a> to reset default drivers and follow the steps to restore the board drivers to their original settings. Then follow all steps underneath <a href="https://github.com/AlexanderMcLaughlin/TestRepo#firmware-replacement-and-driver-updating">Firmware Replacement and Driver Updating</a></p>
 </details>
 <details>
   <summary>I get the error "No valid JTAG interface found" when programming the softdevice. What do I do?</summary>
-  <p>This likely means that one of the above steps has failed. Verify that under Device Manager in the Universal Serial Bus Devices you have J-Link (Interface 2), if it says BULK (Interface 2) or anything of the sort you need to repeat the steps underneath <a href="https://github.com/AlexanderMcLaughlin/TestRepo#firmware-replacement-and-driver-updating">Firmware Replacement and Driver Updating</a></p>
+  <p>This likely means that one of the above steps has failed. Verify that under Device Manager in the Universal Serial Bus Devices you have J-Link (Interface 2), if it says BULK (Interface 2) or anything of the sort you need to <a href="https://github.com/AlexanderMcLaughlin/TestRepo#reset-default-drivers">reset to the default drivers</a> and repeat the steps underneath <a href="https://github.com/AlexanderMcLaughlin/TestRepo#firmware-replacement-and-driver-updating">Firmware Replacement and Driver Updating</a></p>
 </details>
 <details>
   <summary>Upon clicking "nRF5 Flash SoftDevice" I get no results on the LSI Board. What do I do?</summary>
