@@ -122,6 +122,10 @@ You should now be able to program the board using the Arduino IDE, several examp
   <summary>Upon clicking "nRF5 Flash SoftDevice" I get no results on the LSI Board. What do I do?</summary>
   <p>Try pressing "Verify" and "Upload" in the main GUI, if you get an error from "Verify" there is a compilation error with the .ino file. Otherwise it should upload and begin working.</p>
 </details>
+<details>
+  <summary>nRFgo keeps freezing on me when I click on "nRF5x programming". What do I do?</summary>
+  <p>This usually happens when the wrong version of JLink Configurator is used. Be careful and make sure that you follow the steps in <a href="https://github.com/AlexanderMcLaughlin/TestRepo#jlink-configurator-firmware-replacement">JLink Configurator Firmware Replacement</a> using the JLink version installed automatically by nRFgo Studio and not any other.</p>
+</details>
 
 ## Reset Default Drivers
 - Open Device Manager
