@@ -16,6 +16,7 @@ This README will detail everything from start to finish to set up the LSI Board 
   - [Install Board Files from github Repository](https://github.com/AlexanderMcLaughlin/TestRepo#install-board-files-from-github-repository)
   - [Setup "Flash SoftDevice" Option](https://github.com/AlexanderMcLaughlin/TestRepo#setup-flash-softdevice-option)
 - [Troubleshooting](https://github.com/AlexanderMcLaughlin/TestRepo#troubleshooting)
+- [Reset Default Drivers](https://github.com/AlexanderMcLaughlin/TestRepo#reset-default-drivers)
 
 ## Beginning Workflow Setup
 Make sure that any SEGGER JLink software that you have on your machine currently is taken note of because this walkthrough will only be compatible with the version of SEGGER JLink installed by nRFGo Studio (v5.12f for the most recent version).
@@ -128,9 +129,13 @@ You should now be able to program the board using the Arduino IDE, several examp
 </details>
 
 ## Reset Default Drivers
+This section should be used if you are having a lot of difficulty and need to start from scratch with a clean slate. This will remove all progress done (or undone if steps are done out of order or incorrectly). Only follow these steps if you want to start over completely.
+
 - Open Device Manager
 - Scroll down to Universal Serial Bus Devices
 - Right click on device and click uninstall
 - Check the box that says "Delete the driver software for this device" in the dialog box and click OK
 - Unplug and plug back in the whole LSI Board setup with the Development kit and all from the USB port
+- Wait for the default drivers to be installed
+- At this point it should be a clean slate
 - Continue [here](https://github.com/AlexanderMcLaughlin/TestRepo#firmware-replacement-and-driver-updating)
