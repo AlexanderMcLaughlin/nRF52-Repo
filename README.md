@@ -1,6 +1,22 @@
 # Limbitless Solutions Inc. ISP1507, nrF52 Based Board Setup
 This README will detail everything from start to finish to set up the LSI Board for programming via the Arduino IDE. It will have a troubleshooting section in case of any roadblocks.
 
+## Table of Contents
+- [Beginning Workflow Setup](https://github.com/AlexanderMcLaughlin/TestRepo#beginning-workflow-setup)
+  - [Things to Download](https://github.com/AlexanderMcLaughlin/TestRepo#things-to-download)
+  - [nRFgo Studio](https://github.com/AlexanderMcLaughlin/TestRepo#nrfgo-studio)
+  - [Arduino IDE](https://github.com/AlexanderMcLaughlin/TestRepo#arduino-ide)
+  - [Zadig.exe](https://github.com/AlexanderMcLaughlin/TestRepo#zadigexe)
+- [Firmware Replacement and Driver Updating](https://github.com/AlexanderMcLaughlin/TestRepo#firmware-replacement-and-driver-updating)
+  - [Initial Steps](https://github.com/AlexanderMcLaughlin/TestRepo#initial-steps)
+  - [JLink Configurator Firmware Replacement](https://github.com/AlexanderMcLaughlin/TestRepo#jlink-configurator-firmware-replacement)
+  - [nRFgo Studio Firmware Deletion](https://github.com/AlexanderMcLaughlin/TestRepo#nrfgo-studio-firmware-deletion)
+  - [Replacing Device Drivers with Zadig](https://github.com/AlexanderMcLaughlin/TestRepo#replacing-device-drivers-with-zadig)
+- [Arduino IDE Setup with LSI Board JSON File](https://github.com/AlexanderMcLaughlin/TestRepo#arduino-ide-setup-with-lsi-board-json-file)
+  - [Install Board Files from github Repository](https://github.com/AlexanderMcLaughlin/TestRepo#install-board-files-from-github-repository)
+  - [Setup "Flash SoftDevice" Option](https://github.com/AlexanderMcLaughlin/TestRepo#setup-flash-softdevice-option)
+- [Troubleshooting](https://github.com/AlexanderMcLaughlin/TestRepo#troubleshooting)
+
 ## Beginning Workflow Setup
 Make sure that any SEGGER JLink software that you have on your machine currently is taken note of because this walkthrough will only be compatible with the version of SEGGER JLink installed by nRFGo Studio (v5.12f for the most recent version).
 The software that will be used in this guide is as follows:
@@ -16,6 +32,7 @@ Most of the software necessary in this tutorial will be included in the provided
 
 ### nRFgo Studio
 [Install nRFgo Studio](https://www.nordicsemi.com/?sc_itemid=%7B23B6FAAE-0B1B-415A-B891-5B916E854AC4%7D), during this process it will start two separate installers: one for a specific version of JLink and the other for command line utilities which will not be used in this setup.
+
 Select the last option for installation and wait for the installer to open the JLink and Command Line Utilities installers and change the options to your liking or stick with defaults (This guide will use defaults).
 
 Upon completion close the installer and verify that the new JLink version 5.12f is under Program Files x86>>SEGGER and the nRFgo Studio directory is located under Program Files x86>>Nordic Semiconductor.
@@ -26,6 +43,7 @@ Upon completion close the installer and verify that the new JLink version 5.12f 
 Upon completion close the installer and open the Arduino IDE to verify that it opens without error. 
 
 Make sure that in Windows Explorer the "show hidden files" option is selected: In Windows Explorer select View>>Options>>Change folder and search options>>Select the view tab>>Under advanced settings select "show hidden files, folders, and drives">>Select OK.
+
 After this verify that under C:/Users/<UserName>/AppData/Local/ the Arduino15 directory exists, this directory is essential and verifies that it is not the Windows Store version.
 
 ### Zadig.exe
@@ -45,6 +63,7 @@ Right click on your LSI device and select "Replace Firmware" Once this is comple
 **WARNING: This section can sometimes be _very_ tricky, please read through the entire thing before starting.**
 Under C:/Program Files x86/Nordic Semiconductor/nRFgo Studio/ run nRFgoStudio.exe.
 On the left hand side toolbox select "nRF5x Programming" and if prompted by a dialog asking you to update the firmware of a device, **select No**. It will prompt you several more times, but **continue selecting No** it will eventually give up and stop prompting you.
+
 Once you have reached the page select the "Erase All" option if you were prompted by that dialog box in the previous step you will be prompted by it again, repeat the same steps and **select No until it has stopped prompting you.**
 After it has stopped prompting you, you are finished with nRFgo, close nRFgo studio.
 
