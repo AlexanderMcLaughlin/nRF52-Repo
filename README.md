@@ -98,11 +98,9 @@ Run zadig.exe and select the Options dropdown and click "List All Devices". Sele
 
 Close and reopen the Arduino IDE to add the menu option to the IDE.
 
-Select the tools dropdown and select "nRF5 Flash SoftDevice" from menu with your choice of example sketch. ***This step will take a while, wait until you get the following message: ***
-`Shutdown Command Invoked`
+Select the tools dropdown and select "nRF5 Flash SoftDevice" from menu with your choice of example sketch. **This step will take a while, wait until you get the following message:** `Shutdown Command Invoked`
 
-After this simply press the "Verify" and "Upload" options in the main GUI of the Arduino IDE. Again, ***this step will take a while.*** This will verify the sketch and upload it to the board. Upon successful completion the following message will be displayed:
-`Shutdown Command Invoked`
+After this simply press the "Verify" and "Upload" options in the main GUI of the Arduino IDE. Again, **this step will take a while.** This will verify the sketch and upload it to the board. Upon successful completion the following message will be displayed: `Shutdown Command Invoked`
 
 Several Errors have been accounted for in the troubleshooting section if the upload is unsuccessful.
 
