@@ -111,8 +111,8 @@ You should now be able to program the board using the Arduino IDE, several examp
 ## Troubleshooting
 
 <details>
-  <summary>Problem</summary>
-  <p>Solution</p>
+  <summary>I accidentally clicked "yes" when nRFgo prompted me to update the firmware on the device. What do I do now?</summary>
+  <p>Go <a href="https://github.com/AlexanderMcLaughlin/TestRepo#reset-default-drivers">here</a> and follow the steps to restore the board drivers to their original settings. Then follow all steps underneath <a href="https://github.com/AlexanderMcLaughlin/TestRepo#firmware-replacement-and-driver-updating">Firmware Replacement and Driver Updating</a></p>
 </details>
 <details>
   <summary>Problem</summary>
@@ -126,3 +126,11 @@ You should now be able to program the board using the Arduino IDE, several examp
   <summary>Problem</summary>
   <p>Solution</p>
 </details>
+
+## Reset Default Drivers
+- Open Device Manager
+- Scroll down to Universal Serial Bus Devices
+- Right click on device and click uninstall
+- Check the box that says "Delete the driver software for this device" in the dialog box and click OK
+- Unplug and plug back in the whole LSI Board setup with the Development kit and all from the USB port
+- Continue [here](https://github.com/AlexanderMcLaughlin/TestRepo#firmware-replacement-and-driver-updating)
