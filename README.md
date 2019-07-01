@@ -84,7 +84,7 @@ Run zadig.exe and select the Options dropdown and click "List All Devices". Sele
 - This should take about 10 minutes
 - Once completed select the tools dropdown menu and set the following properties:
   - Board: LSI Board
-  - SoftDevice: S132
+  - SoftDevice: S132 (Not S132v6)
   - Low Frequency Clock: Crystal Oscillator
   - Port: <The current USB Port that your Development Kit/LSI Board Setup is plugged into (Should be COM#)>
   - Programmer: J-Link
