@@ -109,3 +109,20 @@ You should now be able to program the board using the Arduino IDE, several examp
 
 
 ## Troubleshooting
+
+<details>
+  <summary>Problem</summary>
+  <p>Solution</p>
+</details>
+<details>
+  <summary>Problem</summary>
+  <p>Solution</p>
+</details>
+<details>
+  <summary>Problem</summary>
+  <p>Solution</p>
+</details>
+<details>
+  <summary>Problem</summary>
+  <p>Solution</p>
+</details>
