@@ -77,7 +77,7 @@ Run zadig.exe and select the Options dropdown and click "List All Devices". Sele
 - Under Additional Board Manager URLs paste this URL: 
 `https://raw.githubusercontent.com/AlexanderMcLaughlin/TestRepo/master/package_nRF5_boards_index.json`
 - Click OK
-- Click the Tools dropdown menu and hover over 'Board: "<Current Board>"' and then select "Boards Manager..."
+- Click the Tools dropdown menu and hover over 'Board: "Current Board"' and then select "Boards Manager..."
 - Click the top bar where it says "__Filter your search...__" and type "LSI Board"
 - Click on the first item and install version 0.0.1
 - This should take about 10 minutes
@@ -115,16 +115,12 @@ You should now be able to program the board using the Arduino IDE, several examp
   <p>Go <a href="https://github.com/AlexanderMcLaughlin/TestRepo#reset-default-drivers">here</a> and follow the steps to restore the board drivers to their original settings. Then follow all steps underneath <a href="https://github.com/AlexanderMcLaughlin/TestRepo#firmware-replacement-and-driver-updating">Firmware Replacement and Driver Updating</a></p>
 </details>
 <details>
-  <summary>Problem</summary>
-  <p>Solution</p>
+  <summary>I get the error "No valid JTAG interface found" when programming the softdevice. What do I do?</summary>
+  <p>This likely means that one of the above steps has failed. Verify that under Device Manager in the Universal Serial Bus Devices you have J-Link (Interface 2), if it says BULK (Interface 2) or anything of the sort you need to repeat the steps underneath <a href="https://github.com/AlexanderMcLaughlin/TestRepo#firmware-replacement-and-driver-updating">Firmware Replacement and Driver Updating</a></p>
 </details>
 <details>
-  <summary>Problem</summary>
-  <p>Solution</p>
-</details>
-<details>
-  <summary>Problem</summary>
-  <p>Solution</p>
+  <summary>Upon clicking "nRF5 Flash SoftDevice" I get no results on the LSI Board. What do I do?</summary>
+  <p>Try pressing "Verify" and "Upload" in the main GUI, if you get an error from "Verify" there is a compilation error with the .ino file. Otherwise it should upload and begin working.</p>
 </details>
 
 ## Reset Default Drivers
