@@ -1,7 +1,7 @@
 {
   "packages": [
     {
-      "name": "LSI",
+      "name": "sandeepmistry",
       "maintainer": "Limbitless Solutions Inc.",
       "platforms": [
         {
@@ -16,12 +16,12 @@
           ],
           "toolsDependencies": [
             {
-              "packager": "LSI",
+              "packager": "sandeepmistry",
               "name": "gcc-arm-none-eabi",
               "version": "5_2-2015q4"
             },
             {
-              "packager": "LSI",
+              "packager": "sandeepmistry",
               "name": "openocd",
               "version": "0.10.0-dev.nrf5"
             }
