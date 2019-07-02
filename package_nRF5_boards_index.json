@@ -34,21 +34,6 @@
           "version": "5_2-2015q4",
           "systems": [
             {
-              "host": "i386-apple-darwin11",
-              "url": "https://github.com/AlexanderMcLaughlin/TestRepo/blob/master/OtherFiles/gcc-arm-none-eabi-5_2-2015q4-20151219-mac.tar.bz2",
-              "archiveFileName": "gcc-arm-none-eabi-5_2-2015q4-20151219-mac.tar.bz2"
-            },
-            {
-              "host": "i686-linux-gnu",
-              "url": "https://github.com/AlexanderMcLaughlin/TestRepo/blob/master/OtherFiles/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2",
-              "archiveFileName": "gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2"
-            },
-            {
-              "host": "x86_64-pc-linux-gnu",
-              "url": "https://github.com/AlexanderMcLaughlin/TestRepo/blob/master/OtherFiles/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2",
-              "archiveFileName": "gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2"
-            },
-            {
               "host": "i686-mingw32",
               "url": "https://github.com/AlexanderMcLaughlin/TestRepo/blob/master/OtherFiles/gcc-arm-none-eabi-5_2-2015q4-20151219-win32.tar.bz2",
               "archiveFileName": "gcc-arm-none-eabi-5_2-2015q4-20151219-win32.tar.bz2"
@@ -59,21 +44,6 @@
           "name": "openocd",
           "version": "0.10.0-dev.nrf5",
           "systems": [
-            {
-              "host": "i386-apple-darwin11",
-              "url": "https://github.com/AlexanderMcLaughlin/TestRepo/blob/master/OtherFiles/openocd-osx-0.10.0-dev-nrf5.tar.gz",
-              "archiveFileName": "openocd-osx-0.10.0-dev-nrf5.tar.gz"
-            },
-            {
-              "host": "i686-linux-gnu",
-              "url": "https://github.com/AlexanderMcLaughlin/TestRepo/blob/master/OtherFiles/openocd-linux32-0.10.0-dev-nrf5.tar.gz",
-              "archiveFileName": "openocd-linux32-0.10.0-dev-nrf5.tar.gz"
-            },
-            {
-              "host": "x86_64-pc-linux-gnu",
-              "url": "https://github.com/AlexanderMcLaughlin/TestRepo/blob/master/OtherFiles/openocd-linux32-0.10.0-dev-nrf5.tar.gz",
-              "archiveFileName": "openocd-linux32-0.10.0-dev-nrf5.tar.gz"
-            },
             {
               "host": "i686-mingw32",
               "url": "https://github.com/AlexanderMcLaughlin/TestRepo/blob/master/OtherFiles/openocd-win32-0.10.0-dev-nrf5.tar.gz",
