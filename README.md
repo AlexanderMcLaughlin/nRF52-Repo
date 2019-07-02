@@ -1,6 +1,8 @@
 # Limbitless Solutions Inc. ISP1507, nrF52 Based Board Setup
 This README will detail everything from start to finish to set up the LSI Board for programming via the Arduino IDE. It will have a troubleshooting section in case of any roadblocks.
 
+**This is a one time setup, once completed development of programs for the LSI Board from the Arduino IDE is possible and this tutorial will not be needed anymore**
+
 ## Table of Contents
 - [Beginning Workflow Setup](https://github.com/AlexanderMcLaughlin/TestRepo#beginning-workflow-setup)
   - [Things to Download](https://github.com/AlexanderMcLaughlin/TestRepo#things-to-download)
