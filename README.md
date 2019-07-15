@@ -31,7 +31,7 @@ The software that will be used in this guide is as follows:
 Make sure that you have access to the internet in order to complete the Arduino IDE setup, the files needed for the board will be downloaded directly from a github repository online.
 
 ### Things to Download
-Most of the software necessary in this tutorial will be included in the provided software package, after downloading this you should have everything you'll need. Inside the package a python installation script is included which will begin the process for you.
+Most of the software necessary in this tutorial will be included in the provided software package, after downloading this you should have everything you'll need.
 
 ### nRFgo Studio
 [Install nRFgo Studio](https://www.nordicsemi.com/?sc_itemid=%7B23B6FAAE-0B1B-415A-B891-5B916E854AC4%7D), during this process it will start two separate installers: one for a specific version of JLink and the other for command line utilities which will not be used in this setup.
@@ -47,7 +47,7 @@ Upon completion close the installer and open the Arduino IDE to verify that it o
 
 Make sure that in Windows Explorer the "show hidden files" option is selected: In Windows Explorer select View>>Options>>Change folder and search options>>Select the view tab>>Under advanced settings select "show hidden files, folders, and drives">>Select OK.
 
-After this verify that under C:/Users/<UserName>/AppData/Local/ the Arduino15 directory exists, this directory is essential and verifies that it is not the Windows Store version.
+After this verify that under C:/Users/UserName/AppData/Local/ the Arduino15 directory exists, this directory is essential and verifies that it is not the Windows Store version.
 
 ### Zadig.exe
 Download [Zadig](), verify that it works properly by opening it.
