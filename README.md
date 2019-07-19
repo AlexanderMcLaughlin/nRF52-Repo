@@ -4,10 +4,11 @@ This README will detail everything from start to finish to set up the LSI Board 
 ## Table of Contents
 - [Beginning Workflow Setup](https://github.com/AlexanderMcLaughlin/TestRepo#beginning-workflow-setup)
   - [Things to Download](https://github.com/AlexanderMcLaughlin/TestRepo#things-to-download)
-  - [nRFgo Studio](https://github.com/AlexanderMcLaughlin/TestRepo#nrfgo-studio)
-  - [Arduino IDE](https://github.com/AlexanderMcLaughlin/TestRepo#arduino-ide)
-  - [Zadig.exe](https://github.com/AlexanderMcLaughlin/TestRepo#zadigexe)
-  - [Segger Embedded Studio](https://github.com/AlexanderMcLaughlin/TestRepo#segger-embedded-studio)
+    - [nRFgo Studio](https://github.com/AlexanderMcLaughlin/TestRepo#nrfgo-studio)
+    - [Arduino IDE](https://github.com/AlexanderMcLaughlin/TestRepo#arduino-ide)
+    - [Zadig.exe](https://github.com/AlexanderMcLaughlin/TestRepo#zadigexe)
+    - [Segger Embedded Studio](https://github.com/AlexanderMcLaughlin/TestRepo#segger-embedded-studio)
+    - [nrfutil.exe](https://github.com/AlexanderMcLaughlin/TestRepo#nrfutilexe)
 - [Firmware Replacement and Driver Updating](https://github.com/AlexanderMcLaughlin/TestRepo#firmware-replacement-and-driver-updating)
   - [Initial Steps](https://github.com/AlexanderMcLaughlin/TestRepo#initial-steps)
   - [JLink Configurator Firmware Replacement](https://github.com/AlexanderMcLaughlin/TestRepo#jlink-configurator-firmware-replacement)
@@ -40,9 +41,6 @@ Select the last option for installation and wait for the installer to open the J
 
 Upon completion close the installer and verify that the new JLink version 5.12f is under Program Files x86>>SEGGER and the nRFgo Studio directory is located under Program Files x86>>Nordic Semiconductor.
 
-### Segger Embedded Studio
-[Install Segger Embedded Studio](https://www.segger.com/downloads/embedded-studio/EmbeddedStudio_ARM_Win_x64), simply choose the defaults for installation and follow the instructions until it finishes.
-
 ### Arduino IDE
 [Install the Arduino IDE v1.8.5](https://www.arduino.cc/en/Main/OldSoftwareReleases), if you already have another version installed just start this installer and it will replace the version you have with 1.8.5.
 
@@ -54,6 +52,12 @@ After this verify that under C:/Users/UserName/AppData/Local/ the Arduino15 dire
 
 ### Zadig.exe
 Download [Zadig](https://zadig.akeo.ie/), verify that it works properly by opening it.
+
+### Segger Embedded Studio
+[Install Segger Embedded Studio](https://www.segger.com/downloads/embedded-studio/EmbeddedStudio_ARM_Win_x64), simply choose the defaults for installation and follow the instructions until it finishes.
+
+### nrfutil.exe
+[Install nrfutil.exe](https://github.com/NordicSemiconductor/pc-nrfutil/releases/download/v5.2.0/nrfutil.exe)
 
 ## Firmware Replacement and Driver Updating
 The steps that follow should only be completed once all the above softwares have been properly installed and verified, Arduino IDE setup will follow after.
@@ -174,24 +178,5 @@ Once you have executed this command your DFU package should be completed!
 
 Simply upload that zip packet to the app, put the board in DFU mode, and upload it. This will change the application on the board, and also keep the DFU Secure Bootloader.
 
-## Temporarily Using nRFConnect
+## Temporarily Using nRFConnect to Send OTA Updates
 Download the nRFConnect app to your phone, upload the DFU zip packet you just generated to your phone, if using iPhone email is the easiest method. Put the board in DFU mode (Hold down the button while power cycling the board) then connect to "DFUTarg" and click "Connect", select the DFU button on the right-hand side, Select your zip packet (if not listed, add using the plus button in the top right) and press the play button on the bottom. After it finishes uploading, the board will automatically exit DFU mode and begin executing the Application. You have just completed an OTA device firmware update!
-
-## Troubleshooting
-
-<details>
-  <summary>I accidentally clicked "yes" when nRFgo prompted me to update the firmware on the device. What do I do now?</summary>
-  <p>Go <a href="https://github.com/AlexanderMcLaughlin/TestRepo#reset-default-drivers">here</a> to reset default drivers and follow the steps to restore the board drivers to their original settings. Then follow all steps underneath <a href="https://github.com/AlexanderMcLaughlin/TestRepo#firmware-replacement-and-driver-updating">Firmware Replacement and Driver Updating</a></p>
-</details>
-<details>
-  <summary>I get the error "No valid JTAG interface found" when programming the softdevice. What do I do?</summary>
-  <p>This likely means that one of the above steps has failed. Verify that under Device Manager in the Universal Serial Bus Devices you have J-Link (Interface 2), if it says BULK (Interface 2) or anything of the sort you need to <a href="https://github.com/AlexanderMcLaughlin/TestRepo#reset-default-drivers">reset to the default drivers</a> and repeat the steps underneath <a href="https://github.com/AlexanderMcLaughlin/TestRepo#firmware-replacement-and-driver-updating">Firmware Replacement and Driver Updating</a></p>
-</details>
-<details>
-  <summary>Upon clicking "nRF5 Flash SoftDevice" I get no results on the LSI Board. What do I do?</summary>
-  <p>Try pressing "Verify" and "Upload" in the main GUI, if you get an error from "Verify" there is a compilation error with the .ino file. Otherwise it should upload and begin working.</p>
-</details>
-<details>
-  <summary>nRFgo keeps freezing on me when I click on "nRF5x programming". What do I do?</summary>
-  <p>This usually happens when the wrong version of JLink Configurator is used. Be careful and make sure that you follow the steps in <a href="https://github.com/AlexanderMcLaughlin/TestRepo#jlink-configurator-firmware-replacement">JLink Configurator Firmware Replacement</a> using the JLink version installed automatically by nRFgo Studio and not any other.</p>
-</details>
