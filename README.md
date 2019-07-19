@@ -17,8 +17,11 @@ This README will detail everything from start to finish to set up the LSI Board 
 - [Arduino IDE Setup with LSI Board JSON File](https://github.com/AlexanderMcLaughlin/TestRepo#arduino-ide-setup-with-lsi-board-json-file)
   - [Install Board Files from github Repository](https://github.com/AlexanderMcLaughlin/TestRepo#install-board-files-from-github-repository)
   - [Setup "Flash SoftDevice" Option](https://github.com/AlexanderMcLaughlin/TestRepo#setup-flash-softdevice-option)
-- [Troubleshooting](https://github.com/AlexanderMcLaughlin/TestRepo#troubleshooting)
-- [Reset Default Drivers](https://github.com/AlexanderMcLaughlin/TestRepo#reset-default-drivers)
+- [Sending a DFU Package over OTA After Arduino IDE Development](https://github.com/AlexanderMcLaughlin/TestRepo#sending-a-dfu-package-over-ota-after-arduino-ide-development)
+  - [Preparing the Board for the Bootloader](https://github.com/AlexanderMcLaughlin/TestRepo#preparing-the-board-for-the-bootloader)
+  - [Preparing the Secure DFU Bootloader](https://github.com/AlexanderMcLaughlin/TestRepo#preparing-the-secure-dfu-bootloader)
+  - [Creating the DFU Packet](https://github.com/AlexanderMcLaughlin/TestRepo#creating-the-dfu-packet)
+- [Temporarily Using nRFConnect to Send OTA Updates](https://github.com/AlexanderMcLaughlin/TestRepo#temporarily-using-nrfconnect-to-send-ota-updates)
 
 ## Beginning Workflow Setup
 Make sure that any SEGGER JLink software that you have on your machine currently is taken note of because this walkthrough will only be compatible with the version of SEGGER JLink installed by nRFGo Studio (v5.12f for the most recent version).
