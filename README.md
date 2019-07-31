@@ -1,6 +1,8 @@
 # Limbitless Solutions Inc. ISP1507, nrF52 Based Board Setup
 This README will detail everything from start to finish to set up the LSI Board for programming via the Arduino IDE. It will have a troubleshooting section in case of any roadblocks.
 
+Note: Any previous install of the sandeepmistry nRF52 library or this library should be uninstalled before beginning this guide.
+
 ## Table of Contents
 - [Beginning Workflow Setup](https://github.com/AlexanderMcLaughlin/TestRepo#beginning-workflow-setup)
   - [Things to Download](https://github.com/AlexanderMcLaughlin/TestRepo#things-to-download)
@@ -104,6 +106,8 @@ This will leave the board in a type of Arduino IDE development mode where typica
   - Programmer: J-Link
   
 Your board files should be set up, but you need to install the Flash SoftDevice option in order for the compilation process to be successful.
+
+Note: We have been experiencing some problems with the compatibility of the update of softdevice from v2.0.1 to v6.1.1 (in order to add OTA support to this project with the SDK's version of the bootloader) and accessing the functions of the SoftDevice. In an attempt to fix this problem we've created an updated package that we believe will resolve this issue, although this package has not been thoroughly tested. In order to use it uninstall the previous version of the library and put this link into board manager: `https://raw.githubusercontent.com/AlexanderMcLaughlin/TestRepo/master/package_nRF5_new_SD_index.json`
 
 ### Setup "Flash SoftDevice" Option
 - Download this [nRF5FlashSoftDevice.jar](https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/nRF5FlashSoftDevice.jar) file
