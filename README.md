@@ -107,7 +107,7 @@ This will leave the board in a type of Arduino IDE development mode where typica
   
 Your board files should be set up, but you need to install the Flash SoftDevice option in order for the compilation process to be successful.
 
-Note: We have been experiencing some problems with the compatibility of the update of softdevice from v2.0.1 to v6.1.1 (in order to add OTA support to this project with the SDK's version of the bootloader) and accessing the functions of the SoftDevice. In an attempt to fix this problem we've created an updated package that we believe will resolve this issue, although this package has not been thoroughly tested. In order to use it uninstall the previous version of the library and put this link into board manager: `https://raw.githubusercontent.com/AlexanderMcLaughlin/TestRepo/master/package_nRF5_new_SD_index.json`
+Note: We have been experiencing some problems with the compatibility of the update of softdevice from v2.0.1 to v6.1.1 (in order to add OTA support to this project with the SDK's version of the bootloader) and accessing the functions of the SoftDevice. In order to make a DFU packet to send OTA firmware updates the following library needs to be used, however, it is incompatible with the BLEPeripheral library due to its SoftDevice version, a fix for this is currently in progress, but a new BLE library may need to be used instead: `https://raw.githubusercontent.com/AlexanderMcLaughlin/TestRepo/master/package_nRF5_new_SD_index.json`
 
 ### Setup "Flash SoftDevice" Option
 - Download this [nRF5FlashSoftDevice.jar](https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/nRF5FlashSoftDevice.jar) file
